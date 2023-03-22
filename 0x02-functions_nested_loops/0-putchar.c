@@ -12,7 +12,7 @@ int main(void)
 	_putchar('a');
 	_putchar('r'):
 	_putchar('\n');
-	retuen (0);
+	return (0);
 
 }
 
