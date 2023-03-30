@@ -1,5 +1,5 @@
 #ifndef INV_MAIN_H
-#define INV_MAINN_H
+#define INV_MAIN_H
 
 int _putchar(char);
 char *_strcat(char *dest, char *src);
