@@ -1,19 +1,19 @@
 #include "main.h"
 /**
- * _memset - fills memory with a constant byte.
- * @s: source string
- * @b: the contant byte for filling
+ * _memcpy - fills memory with another buffer.
+ * @dest: source string
+ * @src: string for filling
  * @n: lenght of buffer
  * Return: new string.
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i = 0;
 
 	while (i < n)
 	{
-		*(s + i) = b;
+		*(dest + i) = *(src + i);
 		i++;
 	}
-	return (s);
+	return (dest);
 }
