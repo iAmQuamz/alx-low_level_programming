@@ -1,18 +1,16 @@
 #include "lists.h"
 /**
- * dlistint_len - show us the number of elements in a DLL
- * @h: a pointer to the head of the DLL
- * Return: the number of elements in a DLL
+ * dlistint_len - func that returns length of list
+ * @h: header
+ *
+ * Return: length
  */
+
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t num_of_elements;
+	int i;
 
-	num_of_elements = 0;
-	while (h)
-	{
-		h = h->next;
-		num_of_elements = num_of_elements + 1;
-	}
-	return (num_of_elements);
+	for (i = 0; h; h = h->next, i++)
+		;
+	return (i);
 }
